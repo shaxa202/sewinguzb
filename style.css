@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #0078D7;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+nav {
+    position: absolute;
+    top: 60px; /* Отступ от заголовка */
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    z-index: 1000;
+}
+
+nav.hidden {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0078D7;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.machine {
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #0078D7;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .menu-icon {
+        font-size: 25px;
+    }
+    .rasm {
+        width: 180px;
+    }
+
+    nav {
+        width: 100%;
+    }
+}
+
+@media (max-width: 280px) {
+    
+    .rasm {
+        width: 180px;
+    }
+    header h1 {
+        margin-right: 8px;
+    }
+    .text1 {
+        margin-right: 50px;
+    }
+    .text2 {
+        margin-right: 10px;
+    }
+    .text3 {
+        margin-right: 10px;
+    }
+    .text4 {
+        margin-right: 59px;
+    }
+}
